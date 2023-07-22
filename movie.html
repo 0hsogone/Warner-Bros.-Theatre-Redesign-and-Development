@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Home</title>
+        <style></style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="mcstylesheet.css" type="text/css">
+    </head>
+    <body>
+        <nav>
+            <label class="logo">WB</label>
+            <ul>
+                <li><a href="movie.html">Home</a></li>
+                <li><a href="nowshowing.html">Now Showing</a></li>
+                <li><a href="theatrelocations.html">Theatre Locations</a></li>
+                <li><a href="fnd.html">Food & Drinks</a></li>
+                <li><a href="whn.html">What's Hot Now</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get Tickets</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+        </nav>
+        <div class="dropdown_menu">
+            <li><a href="movie.html">Home</a></li>
+            <li><a href="nowshowing.html">Now Showing</a></li>
+            <li><a href="theatrelocations.html">Theatre Locations</a></li>
+            <li><a href="fnd.html">Food & Drinks</a></li>
+            <li><a href="whn.html">What's Hot Now</a></li>
+            <li><a href="#" class="action_btn">Get Tickets</a></li>
+        </div>
+        <script>
+            const togglebtn = document.querySelector('.toggle_btn')
+            const togglebtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+            
+            togglebtn.onclick = function(){
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                togglebtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+        <header>
+            <div class="container">
+                <div class="banner">
+                     <div class="banner-text">
+                        <h1>WARNER BROS.</h1>
+                        <h2>TOP TIER ENTERTAINMENT</h2>
+                     </div>
+                </div>
+            </div>
+        </header>
+        <div class="main_content">
+            <aside>
+                <p>Advertise here</p>
+            </aside>
+            <section id="content">
+                <h3>CURRENTLY SHOWING</h3>
+                <div class="container">
+                    <img src="jw4.jpeg" alt="John Wick: Chapter 4">
+                    <h4>John Wick: Chapter 4</h4>
+                    <p>Currently Showing. <br />
+                       Get a ticket for $7.99 <br />
+                       Showing in Screen 4</p>
+                    <img src="Creed3.jpeg" alt="Creed III">
+                    <h4>Creed III</h4>
+                    <p>Currently Showing. <br />
+                        Get a ticket for $6.99 <br />
+                        Showing in Screen 2</p>
+                    <img src="mb.jpeg" alt="Super Mario Bros.">
+                    <h4>Super Mario Bros. Movie</h4>
+                    <p>Currently Showing. <br />
+                        Get a ticket for $3.99 <br />
+                        Showing in Screen 1</p>
+                    <img src="scream.jpeg" alt="Scream VI">
+                    <h4>Scream VI</h4>
+                    <p>Currently Showing. <br />
+                        Get a ticket for $5.99 <br />
+                        Showing in Screen 3</p>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <ul class="contacts">
+                    <li><a href="#"><i class="fa fa-email"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                    <li><a href="#"><i class="fa fa-phonenumber"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy;2023 designed by <span>Ogone Shawn Manyaapelo</span></p>
+            </div>
+
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Home</title>
+        <style></style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="mcstylesheet.css" type="text/css">
+    </head>
+    <body>
+        <nav>
+            <label class="logo">WB</label>
+            <ul>
+                <li><a href="movie.html">Home</a></li>
+                <li><a href="nowshowing.html">Now Showing</a></li>
+                <li><a href="theatrelocations.html">Theatre Locations</a></li>
+                <li><a href="fnd.html">Food & Drinks</a></li>
+                <li><a href="whn.html">What's Hot Now</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get Tickets</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+        </nav>
+        <div class="dropdown_menu">
+            <li><a href="movie.html">Home</a></li>
+            <li><a href="nowshowing.html">Now Showing</a></li>
+            <li><a href="theatrelocations.html">Theatre Locations</a></li>
+            <li><a href="fnd.html">Food & Drinks</a></li>
+            <li><a href="whn.html">What's Hot Now</a></li>
+            <li><a href="#" class="action_btn">Get Tickets</a></li>
+        </div>
+        <script>
+            const togglebtn = document.querySelector('.toggle_btn')
+            const togglebtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+            
+            togglebtn.onclick = function(){
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                togglebtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+        <header>
+            <div class="container">
+                <div class="banner">
+                     <div class="banner-text">
+                        <h1>OUR LOCATIONS</h1>
+                        <h2>HOTSPOTs!</h2>
+                     </div>
+                </div>
+            </div>
+        </header>
+        <aside>
+            <p>Advertise here</p>
+        </aside>
+        <section id="content_locations">
+            <h4>RIVERWALK MALL</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.4629110125506!2d25.93034138234279!3d-24.676608921452534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb5bf1e9c952ed%3A0x48f175dca05734d7!2sRiverwalk%20Mall!5e0!3m2!1sen!2sbw!4v1685004862974!5m2!1sen!2sbw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>In Riverwalk mall we are shop B23</p>
+            <h4>GAME CITY</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.152926090522!2d25.876632925492366!3d-24.687269228042684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb5a3c3f18e137%3A0x89ed6cbf81b20118!2sGame%20City%2C%20Gaborone!5e0!3m2!1sen!2sbw!4v1685005107752!5m2!1sen!2sbw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>In Game City we are in shop D12</p>
+            <h4>AIRPORT JUNCTION SHOPPING CENTRE</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.540422120925!2d25.92414307548995!3d-24.605052078096996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb5b4b32d732cf%3A0x5b3ab821f0c5f6a0!2sAirport%20Junction%20Shopping%20Centre!5e0!3m2!1sen!2sbw!4v1685005222134!5m2!1sen!2sbw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>In Airport Junction shopping centre we are in shop A17</p>
+            <h4>THE FIELDS SHOPPING CENTRE</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3626.079719408146!2d25.902636975491312!3d-24.655384178063684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb5bc81f5f856d%3A0xb20759353eb41e3a!2sThe%20Fields%20Shopping%20Centre!5e0!3m2!1sen!2sbw!4v1685005285000!5m2!1sen!2sbw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>In The Fields shopping centre we are in shop C54</p>
+        </section>
+    </body>
+</html>
